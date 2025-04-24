@@ -119,7 +119,6 @@
 		</style>
 	</head>
 	<body lang="EN-US">
-		<div>
 			<p>
 				<span class="no-break">
 					<span class="bold">Weekly: </span></span>
@@ -766,17 +765,9 @@
 	</body>
 	<script>
 		window.onload = function () {
-			// Get the viewport dimensions
 			const viewportWidth = window.innerWidth;
-			const viewportHeight = window.innerHeight;
-
-			// Get the browser's user agent string
 			const userAgent = navigator.userAgent;
-
-			// Check if the user agent indicates a mobile device
 			const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
-
-			// Check if the viewport width or height is below 500px
 			if (isMobile) {
 				const divs = document.querySelectorAll('div');
 				divs.forEach(div => {
@@ -785,11 +776,9 @@
 				});
 			} else {
 				document.body.style.transform = "scale(1.3)";
-				document.body.style.transformOrigin = "top left"; // Set the origin for scaling
+				document.body.style.transformOrigin = "top left";
 			}
-
-			// Display the dimensions in an alert
-			alert(`Updated: Thursday, April 24, 2025, 12:18 PM`);
+			alert(`Updated: Thursday, April 24, 2025, 12:25 PM`);
 		};
 	</script>
 </html>
