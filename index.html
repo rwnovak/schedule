@@ -769,7 +769,8 @@
 			const viewportWidth = window.innerWidth;
 			const viewportHeight = window.innerHeight;
 
-			// Check if the viewport width or height is below 500px			if (viewportWidth < 500 || viewportHeight < 500) {
+			// Check if the viewport width or height is below 500px
+			if (viewportWidth < 500 || viewportHeight < 500) {
 				const divs = document.querySelectorAll('div');
 				divs.forEach(div => {
 					div.style.maxWidth = '16.8in';
