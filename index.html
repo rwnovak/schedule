@@ -14,7 +14,7 @@
 			}
 
 			div {
-				max-width: 100vw; /* Limit text width */
+				max-width: 200vw; /* Limit text width */
 				word-wrap: break-word; /* Break long words */
 				margin-bottom: 12pt; /* Add space between divs */
 			}
@@ -733,7 +733,11 @@
 				</span>
 				<span class="no-break">
 					<span>Rilo Kiley @ Palace Theatre </span>
-					<span>(Tue, Sep 16)</span>
+					<span>(Tue, Sep 16)</span><span>, </span>
+				</span>
+				<span class="no-break">
+					<span>Pulp @ Armory </span>
+					<span>(Sat, Sep 20)</span>
 				</span>
 			</p>
 			<p>
@@ -765,7 +769,6 @@
 			// Get the viewport dimensions
 			const viewportWidth = window.innerWidth;
 			const viewportHeight = window.innerHeight;
-			document.body.style.transformOrigin = "top left"; // Set the origin for scaling
 			// Display the dimensions in an alert
 			alert(`Viewport Dimensions: Width = ${viewportWidth}px, Height = ${viewportHeight}px`);
 		};
