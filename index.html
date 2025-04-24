@@ -14,7 +14,7 @@
 			}
 
 			div {
-				max-width: 200vw; /* Limit text width */
+				max-width: 1000pt; /* Limit text width */
 				word-wrap: break-word; /* Break long words */
 				margin-bottom: 12pt; /* Add space between divs */
 			}
@@ -769,8 +769,10 @@
 			// Get the viewport dimensions
 			const viewportWidth = window.innerWidth;
 			const viewportHeight = window.innerHeight;
+			document.body.style.transform = "scale(0.5)"; // Scale the body to 50%
+			document.body.style.transformOrigin = "top left"; // Set the origin for scaling
 			// Display the dimensions in an alert
-			alert(`Viewport Dimensions: Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 8:30 AM`);
+			alert(`Viewport Dimensions: Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 8:34 AM`);
 		};
 	</script>
 </html>
