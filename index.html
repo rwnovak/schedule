@@ -770,6 +770,8 @@
 			const viewportWidth = window.innerWidth;
 			const viewportHeight = window.innerHeight;
 
+// Get the browser's user agent stringconst userAgent = navigator.userAgent;
+
 			// Check if the viewport width or height is below 500px
 			if (viewportWidth < 500 || viewportHeight < 500) {
 				const divs = document.querySelectorAll('div');
@@ -783,7 +785,7 @@
 			}
 
 			// Display the dimensions in an alert
-			alert(`Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 10:38 AM`);
+			alert(`Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 10:44 AM/n$[userAgent]`);
 		};
 	</script>
 </html>
