@@ -16,7 +16,7 @@
 			div {
 				max-width: 4000pt; /* Limit text width */
 				word-wrap: break-word; /* Break long words */
-				margin-bottom: 12pt; /* Add space between divs */
+				width: auto; /* Allow the width to adjust based on content */				border: 1px solid red; /* Add a border for debugging */				 margin: 0 auto; /* Center the div */				margin-bottom: 12pt; /* Add space between divs */
 			}
 
 			div::after {				content: ""; /* Empty content for the line */				position: absolute; /* Position relative to the div */				top: 0; /* Start at the top of the div */				right: 0; /* Align to the right edge of the div */				width: 1px; /* Set the line width */				height: 100%; /* Make the line span the full height of the div */				background-color: gray; /* Set the line color */			}			p {
@@ -772,7 +772,7 @@
 			document.body.style.transform = "scale(0.5)"; // Scale the body to 50%
 			document.body.style.transformOrigin = "top left"; // Set the origin for scaling
 			// Display the dimensions in an alert
-			alert(`Viewport Dimensions: Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 8:41 AM`);
+			alert(`Viewport Dimensions: Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 8:46 AM`);
 		};
 	</script>
 </html>
