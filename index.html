@@ -773,8 +773,11 @@
 			// Get the browser's user agent string
 			const userAgent = navigator.userAgent;
 
+			// Check if the user agent indicates a mobile device
+			const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+
 			// Check if the viewport width or height is below 500px
-			if (viewportWidth < 500 || viewportHeight < 500) {
+			if (isMobile) {
 				const divs = document.querySelectorAll('div');
 				divs.forEach(div => {
 					div.style.maxWidth = '16.8in';
@@ -786,7 +789,7 @@
 			}
 
 			// Display the dimensions in an alert
-			alert(`Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 10:48 AM
+			alert(`Width = ${viewportWidth}px, Height = ${viewportHeight}px, \nUpdated: Thursday, April 24, 2025, 10:52 AM
 ${userAgent}`);
 		};
 	</script>
